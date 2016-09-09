@@ -1,0 +1,181 @@
+
+body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    border-top:9px solid #e56038;
+    background:#ebe8de;
+    font-family: 'Open Sans', sans-serif;
+    color:#333333;
+}
+
+p{
+    margin:5px 0;
+    line-height:25px;
+    font-size:14px;
+    padding-bottom: 10px;
+}
+
+a{
+    text-decoration:none;
+    text-transform:uppercase;
+    color:#e56038;
+}
+
+a:hover{
+    color:#345a72;
+}
+
+header{
+    position:relative;
+    width:auto;
+    max-width:900px;
+    margin: 0 auto 20px auto;
+}
+
+h1{
+    margin:40px 0 0 0;
+    font-size:48px;
+    color:#e56038;
+}
+
+header p{
+    margin-left:300px;
+}
+
+#nav{
+    position:absolute;
+    right:0;
+    bottom:0;
+}
+
+#nav ul{
+    list-style:none;
+}
+
+#nav ul li{
+    display:block;
+    float:left;
+    padding-left:15px;
+}
+
+#spacer{
+    width:100%;
+    height:50px;
+    background-color:#345a72;
+    position:relative;
+    color:#ffffff;
+    font-size:18px;
+}
+
+#spacer p{
+    margin-top:15px;
+    width:100%;
+    position:absolute;
+    left:50%;
+}
+
+#main{
+    line-height:25px;
+    clear:both;
+    width:auto;
+    max-width:900px;
+    margin:0 auto;
+}
+
+#main h3{
+    font-size:24px;
+    font-weight:bold;
+    color:#e56038;
+    border-bottom: 3px solid #e56038;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+#bio{
+    margin-top: 20px;
+    font-size:14px;
+    float:left;
+    width:auto;
+    max-width: 450px;
+}
+
+#photo {
+    float:left;
+    position:relative;
+    margin: 40px 0 0 50px;
+    float:right;
+    width:350px;
+}
+
+#photowrap img{
+    float:left;
+}
+
+#photowrap{
+    margin: 30px 0 0 50px;
+}
+
+@media (max-width: 850px){
+    #spacer{
+        font-size:15px;
+    }
+    #bio{
+        float:left;
+        width: 300px;
+        margin: 50px 0 0 10px;
+    }
+    #photo {
+        float:right;
+        margin:80px 10px 0 0;
+    }
+
+}
+
+@media (max-width: 700px){
+    #spacer p{
+        font-size:12px;
+    }
+    #bio{
+        float:left;
+        width: 300px;
+        margin: 50px 0 0 2px;
+    }
+    #photo {
+        float:right;
+        margin:80px 2px 0 0;
+    }
+
+    #photowrap img{
+        width: 200px;
+    }
+
+}
+
+
+@media (max-width: 650px){
+    header{
+        margin-top: 80px;
+        text-align: center;
+    }    
+    #nav{
+        display: none;
+    }  
+    #spacer{
+        height:15px;
+    }
+    #spacer p{
+        display: none;
+    }
+    #bio{
+        width:100%;
+        margin-bottom: 0;
+    }
+    #photo{
+        margin-top:0;
+    }
+    #photowrap{
+        margin: 0 auto;
+    }
+}
+
