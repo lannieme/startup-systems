@@ -15,7 +15,7 @@
             <div id="nav">
                 <ul>
                     <li><a href="#bio">About</a></li>
-                    <li><a href="http://www.lanniemiao.com">Porfolio</a></li>
+                    <li><a href="http://www.lanniemiao.com" target="_blank">Porfolio</a></li>
                     
                 </ul>
             </div>
@@ -32,6 +32,13 @@
                 <p>Hi, I'm Lannie.</p>
                     <p>I graduated from Cornell for my undergraduate study in Information Science, Systems & Technology. Anfter that, I worked at New York City for two years as a DevOps Engineer. I'm currently a master student at Cornell Tech with a major in Information Systems to further pursue my interests in technology. </br></p>
                     <p>During my spare time, I love photography( both digital & film photography). I started one photo a day project since Jan. 2014. I love to do crafts. I'm also a cat lover.</p>
+                    <div id="hw">
+                        <button id="clickevent"> Click here to know more about me. </button>
+                        <div id="dropdown" class="url">
+                            <a href="http://lanniemiao.com" target="_blank"> Personal Homepage</a>
+                            <a href="https://www.instagram.com/lannieme/" target="_blank"> Instagram</a>
+                        </div>
+                    </div>
             </div>
             <div id="photo"> 
                 <div id="photowrap">                 
@@ -50,6 +57,14 @@
           ga('create', 'UA-76301615-2', 'auto');
           ga('send', 'pageview');
 
+        </script>
+
+    <!-- Make something happen on a click -->
+        <script type="text/javascript">
+        document.getElementById("clickevent").onclick = function() {showmore()};
+        function showmore(){
+            document.getElementById("dropdown").classList.toggle("show");
+        }
         </script>
 
 	</body>

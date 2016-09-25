@@ -116,6 +116,36 @@ header p{
     margin: 30px 0 0 50px;
 }
 
+#hw{
+    position: relative;
+    display: inline-block;
+}
+
+#clickevent{
+    background-color:#345a72;
+    color: #ffffff; 
+    cursor: pointer;
+}
+#clickevent:hover, #clickevent:focus{
+    background-color:#e56038;
+}
+
+.url{
+    display:none;
+    position: absolute;
+    background-color: #f9f9f9;
+    overflow: auto;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+}
+
+.url a {
+    padding: 2px 10px;
+    font-size: 13px;
+}
+
+.show {
+    display: block;
+}
 @media (max-width: 850px){
     #spacer{
         font-size:15px;
